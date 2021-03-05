@@ -9,6 +9,19 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script>
+          var cnt =0;
+          function togglelmg() {
+            var img1 = document.getElementById("img1");
+            if (cnt%2==1){
+              img1.src="";
+            } 
+            else {
+              img1.src="시간표.jpg";
+            }
+              cnt++;
+          }
+        </script>
         <style>
             .제목{
                 font-family: 'Nanum Gothic', serif;
@@ -52,11 +65,11 @@
         }
         init();
         </script>
-        <div>과목 같아도 요일별로 선생님이 다르니까 잘들어가</div>
-        <div>(X) 는 아직 줌링크를 못구해서 아직 못들어가는거고</div>
-        <div>클릭했는데 줌이 다른 선생님 방이면</div>
-        <div>카톡으로 최원서한테 연락해줘</div>
+        <div>(X) 는 아직 줌링크를 못구해서 아직 못들어가는거</div>
         <hr>
+        <button onclick="togglelmg()">클릭시 시간표</button>
+        <br>
+        <img src="" id="img1"></img>
         <script> AOS.init(); </script>
         <!--------------------------------------------------------------------------------------------------------------------------------------------------------->
         <div data-aos="zoom-in">
@@ -65,16 +78,16 @@
           <table>
                   <tr>
                     <th></th>
-                    <th>월</th>
-                    <th>화</th>
-                    <th>수</th>
-                    <th>목</th>
-                    <th>금</th>
+                    <th>　　월　　</th>
+                    <th>　　화　　</th>
+                    <th>　　수　　</th>
+                    <th>　　목　　</th>
+                    <th>　　금　　</th>
                   </tr>
                 <tbody>
                   <tr height="80">
-                    <th>1</th>
-                    <td><a href="">생명1 (X)</a></td><!--생명과학 백승혁-->
+                    <th>　1　</th>
+                    <td><a href="https://zoom.us/j/6574050599?pwd=OHYxdS9PWUdEaS91Y2h1TXpOZXh6Zz09">생명1</a></td><!--생명과학 백승혁-->
                     <td><a href="https://us02web.zoom.us/j/7029964982?pwd=VE83Z25QazYwVE5CZGlZV0xQdFNiZz09">수학1</a></td><!--수학 오혜미-->
                     <td><a href="https://us02web.zoom.us/j/2770224072?pwd=czVuNjB2bHRhWDU2VWhycWZKM0xyUT09">미창</a></td><!--미술창작 이지수-->
                     <td><a href="">문학 (X)</a></td><!--문학 장준영-->
@@ -94,7 +107,7 @@
                     <td><a href="">물리1 (X)</a></td><!--물리1 김유미--->
                     <td><a href="https://us02web.zoom.us/j/8399914024?pwd=R2I3TDNNcEZjRVRZOGFxTnZGTmhvdz09">과교</a></td><!--과학교양 권희진-->
                     <td><a href="">물리1 (X)</a></td><!--물리1 김유미--->
-                    <td><a href="">미창 (X)</a></td><!--미술창작 황현경-->
+                    <td><a href="https://us02web.zoom.us/j/9167725349?pwd=TW1SdXZSS1p6K2VwZ0lTSFZNY294dz09">미창</a></td><!--미술창작 황현경-->
                   </tr>
                   <tr height="80">
                     <th>4</th>
@@ -102,7 +115,7 @@
                     <td><a href="https://zoom.us/j/5104395898?pwd=ci9ncHpRTkV6amtvTHVSYzhNK043QT09">영어1</a></td><!--영어1 박보라-->
                     <td><a href="https://us02web.zoom.us/j/7412490253?pwd=dS9lQVlkazFsaEQ2UFR4cCtxcUxXdz09">특색</a></td><!-- 특색 김병준-->
                     <td><a href="https://us02web.zoom.us/j/7029964982?pwd=VE83Z25QazYwVE5CZGlZV0xQdFNiZz09">수학1</a></td><!--수학 오혜미-->
-                    <td><a href="">생명1 (X)</a></td><!--생명과학 백승혁-->
+                    <td><a href="https://zoom.us/j/6574050599?pwd=OHYxdS9PWUdEaS91Y2h1TXpOZXh6Zz09">생명1</a></td><!--생명과학 백승혁-->
                   </tr>
                   <tr height="80">
                     <th>5</th>
@@ -131,7 +144,6 @@
                 </tbody>
           </table>
         </div>
-        <image src="시간표.jpg"></image>
         </center>
     </body>
 </html>
